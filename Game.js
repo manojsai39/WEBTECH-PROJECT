@@ -21,82 +21,56 @@ const winningConditions = [
     [2, 4, 6]
 ];
   
-      // finally combine our output list into one string of HTML and put it on the page
-      quizContainer.innerHTML = output.join('');
-    }
-  
-    function showResults(){
-  
-      // gather answer containers from our quiz
-      const answerContainers = quizContainer.querySelectorAll('.answers');
-  
-      // keep track of user's answers
-      let numCorrect = 0;
-  
-      // for each question...
-      myQuestions.forEach( (currentQuestion, questionNumber) => {
-  
-        // find selected answer
-        const answerContainer = answerContainers[questionNumber];
-        const selector = `input[name=question${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-  
-        // if answer is correct
-        if(userAnswer === currentQuestion.correctAnswer){
-          // add to the number of correct answers
-          numCorrect++;
-  
-          // color the answers green
-          answerContainers[questionNumber].style.color = 'lightgreen';
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+    gameState[clickedCellIndex] = currentPlayer;
+    clickedCell.innerHTML = currentPlayer;
+}
+
+function handlePlayerChange() {
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    statusDisplay.innerHTML = currentPlayerTurn();
+}
+
+function handleResultValidation() {
+    let roundWon = false;
+    for (let i = 0; i <= 7; i++) {
+        const winCondition = winningConditions[i];
+        let a = gameState[winCondition[0]];
+        let b = gameState[winCondition[1]];
+        let c = gameState[winCondition[2]];
+        if (a === '' || b === '' || c === '') {
+            continue;
         }
-        // if answer is wrong or blank
-        else{
-          // color the answers red
-          answerContainers[questionNumber].style.color = 'red';
+        if (a === b && b === c) {
+            roundWon = true;
+            break
         }
-      });
-  
-      // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
-  
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
-    const myQuestions = [
-      {
-        question: "Who invented JavaScript?",
-        answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Which one of these is a JavaScript package manager?",
-        answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Which tool can you use to ensure code quality?",
-        answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
-        },
-        correctAnswer: "d"
-      }
-    ];
-  
-    // Kick things off
-    buildQuiz();
-  
-    // Event listeners
-    submitButton.addEventListener('click', showResults);
-  })();
+
+    if (roundWon) {
+        statusDisplay.innerHTML = winningMessage();
+        gameActive = false;
+        return;
+    }
+
+    let roundDraw = !gameState.includes("");
+    if (roundDraw) {
+        statusDisplay.innerHTML = drawMessage();
+        gameActive = false;
+        return;
+    }
+
+    handlePlayerChange();
+}
+
+function handleCellClick(clickedCellEvent) {
+    const clickedCell = clickedCellEvent.target;
+    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+
+    if (gameState[clickedCellIndex] !== "" || !gameActive) {
+        return;
+    }
+
+    handleCellPlayed(clickedCell, clickedCellIndex);
+    handleResultValidation();
+}

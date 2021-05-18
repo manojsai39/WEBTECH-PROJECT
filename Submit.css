@@ -119,3 +119,86 @@ a {
     transform: scale(2);
     
 }
+
+/*********** NAV BAR CSS **********/
+.navbar {
+    padding-top: 1px;
+}
+ul {
+    list-style: none;
+    border: 2px solid white;
+    background-image: linear-gradient(orange,yellow);
+    display: flex; 
+    padding:5px; 
+}
+li {
+    width: 60%;
+    text-align: center;
+
+}
+a {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar a p {display:none;}
+.navbar a:hover p {display:block;}
+/*********** Main COntent Area CSS **********/
+.MainContentArea {
+    margin: 5px;
+    border: 2px solid white;
+    height: 780px;
+    
+}
+
+.Main{
+    border: 2px solid black;
+    margin:150px;
+    height: fit-content;
+    background-color: rgba(79, 130, 231, 0.4);
+    margin-top: 130px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color:rgb(202, 194, 199);
+    font-weight: bolder;
+    font-size: 18px;
+    box-shadow: inset -5px -5px rgba(169, 188, 190, 0.5);
+    text-align: center;
+}
+
+body{
+    border: 2px solid black;
+    background-image: url("All Prject Images/SubmitPage.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+}
+
+
+
+/*********** Footer CSS **********/
+
+footer {
+    border: 2px solid black;
+    height: 70px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+.Foot2{
+    float: right;
+    color: rgb(14, 15, 15);
+    text-align: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.Foot1{
+    float: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

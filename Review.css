@@ -1,1 +1,69 @@
+@media screen 
+{
+    
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: url("All Prject Images/bg8.jpg");
+} 
+
+/*********** Header CSS **********/
+
+#projectLogoleft {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    padding: 5px;
+    float: left;
+    margin-top: -1%;
+    transition: transform .9s;
+}
+#websitename {
+    font-family: 'Lobster', cursive;
+    padding-left: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 100px;
+    text-align: center;
+    transition: transform .5s;
+    
+}
+#Icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    transition: transform .5s;
+}
+.SocialIcons {
+    border:1px solid chocolate;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    float:right;
+    margin-top: -1%;
+    
+
+}
+.group1 {
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.group2 {
+    padding-left: 10px;
+}
+#projectLogoleft:hover{
+    transform: rotate(360deg);
+    
+}
+#websitename:hover{
+    transform: scale(2);
+    
+}
+#Icons:hover{
+    transform: scale(2);
+    
+}
 

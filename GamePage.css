@@ -3,11 +3,14 @@
 }
 
 footer {
-    border: 2px solid black;
+    border: 2px;
+    
 }
 body {
-    background-image: url("All Prject Images/bg6.jpg");
+    background-image: url("All Prject Images/bg8.jpg");
 } 
+
+
 /*********** Header CSS **********/
 
 #projectLogoleft {
@@ -73,14 +76,15 @@ body {
 }
 ul {
     list-style: none;
-    border: 2px solid white;
+    border: 2px;
     background-image: linear-gradient(orange,yellow);
     display: flex; 
     padding:5px; 
 }
 li {
     width: 60%;
-    text-align: center;  
+    text-align: center;
+
 }
 a {
     font-size: 18px;
@@ -91,73 +95,222 @@ a {
 /*********** Main COntent Area CSS **********/
 .MainContentArea {
     margin: 5px;
-    border: 2px solid black;
+    border: 2px;
     height: 780px;
+    
 }
 /*********** Left COntent Area CSS **********/
 .leftContentArea {
     margin: 5px;
-    border: 2px solid black;
+    border: 2px;
     float: left;
     height: 770px;
-    width: 255px;
 }
-#bk{
-    width: 250px;
-    height: 770px;
-}
-/*********** Cebter COntent Area CSS **********/
-.centercontentArea {
+.leftContentareaTop {
     margin: 5px;
-    border: 2px solid black;
-    width: 1000px;
-    margin-left: 400px;
-    height: 770px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Android_TV_game_controller.jpg/1200px-Android_TV_game_controller.jpg);
+    border: 2px solid white;
+    height: 375px;
+    overflow-y: scroll;
+    background: url("All Prject Images/bg10.jpg");
+    background-size: 400px 400px;
+    border-radius: 10px;
+    
+    
 }
-
-.centercontentArea img{
-    width: 400px;
-    height: 400px;
-    position: absolute;
+.leftContentareaBottom::-webkit-scrollbar {
+    display: none;
 }
-section {
+.table {
+    margin: 2px;
+    border:1px solid white;
+    border-radius: 10px;
+    
+}
+.th {
+    
     text-align: center;
-    color: blanchedalmond;
-}
+    color:white;
+    background-color: green;
+    
 
-.game--container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 306px;
-    margin: 30px;
-    margin-left: 220px;
 }
-
-.cell {
-    font-family: "Permanent Marker", cursive;
-    width: 190px;
-    height: 190px;
-    box-shadow: 0 0 0 1px white;
-    border: 3px solid whitesmoke;
-    cursor: pointer;
-    color: blanchedalmond;
-    line-height: 180px;
-    font-size: 100px;
+.td {
+    
+    text-align: center;
+    background-color: honeydew;
+    color: black;
     
 }
 
+.leftContentareaBottom {
+    margin: 5px;
+    border: 2px solid white;
+    height: 375px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 420px;
+    color: rgb(238, 140, 13);
+    background-color: black;  
+    border-radius: 10px;  
+   
+} 
+.leftContentareaTop::-webkit-scrollbar {
+    display: none;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+#top10net {
+    color: white; 
+}
+.itemofOLinLCB {
+    
+    font-size: 25px;
+    width: 360px;
+    color: white;
+}
+img {
+    border-radius: 10px;
+}
+/*********** Center COntent Area CSS **********/
+
+
+.centercontentArea {
+    margin: 5px;
+    border: 2px;
+    height: 770px;
+    overflow-y: scroll;
+    
+    border-radius: 15px;
+}
+
+.news1 {
+    
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 10px;
+    margin: 1px;
+    width: 1130px;
+    height: 630px;
+}
+#aha {
+    
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#newsaha {
+    font-size: 22px;
+}
+.centercontentArea::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.slideshow-container {
+    padding: 10px;
+    position: relative;
+    margin: auto;
+  }
+  
+ 
+  .mySlides {
+    display: none;
+  }
+  
+ 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+ 
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .numbertext {
+    color:black;
+    font-size: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 /*********** Right COntent Area CSS **********/
 .rightcontentArea {
     margin: 5px;
-    border: 2px solid black;
+    border: 2px;
     float: right;
     height: 770px;
-    width: 255px;
+    
 }
-#mcd{
-    width: 250px;
-    height: 770px;
+.ads{
+    padding-left: 12px;
 }
 /*********** Footer CSS **********/
 

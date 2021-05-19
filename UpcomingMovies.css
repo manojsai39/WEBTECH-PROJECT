@@ -8,3 +8,14 @@ footer {
 body {
     background-image:url("All Prject Images/bg8.jpg");
 } 
+/*********** Header CSS **********/
+
+#projectLogoleft {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    padding: 5px;
+    float: left;
+    margin-top: -1%;
+    transition: transform .9s;
+}

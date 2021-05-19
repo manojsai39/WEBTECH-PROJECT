@@ -19,3 +19,14 @@ body {
     margin-top: -1%;
     transition: transform .9s;
 }
+#websitename {
+    font-family: 'Lobster', cursive;
+    padding-left: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 100px;
+    text-align: center;
+    transition: transform .5s;
+    
+}

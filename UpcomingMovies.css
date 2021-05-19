@@ -110,3 +110,11 @@ a {
     border: 2px;
     border-radius: 10px;
 }
+/*********** Footer CSS **********/
+
+footer {
+    border: 2px;
+    height: 70px;
+    background-color: wheat;
+    border-radius: 10px;
+}

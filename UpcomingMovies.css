@@ -70,3 +70,10 @@ body {
 .navbar {
     padding-top: 1px;
 }
+ul {
+    list-style: none;
+    border: 2px solid white;
+    background-image: linear-gradient(orange,yellow);
+    display: flex; 
+    padding:5px; 
+}

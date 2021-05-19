@@ -87,3 +87,8 @@ a {
 }
 .navbar a p {display:none;}
 .navbar a:hover p {display:block;}
+.Trending {
+    margin: 5px;
+    border: 2px;
+    height: 600px;
+}

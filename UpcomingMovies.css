@@ -36,3 +36,14 @@ body {
     border-radius: 25px;
     transition: transform .5s;
 }
+.SocialIcons {
+    border:1px solid chocolate;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    float:right;
+    margin-top: -1%;
+    
+
+}

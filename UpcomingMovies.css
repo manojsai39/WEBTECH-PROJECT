@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+footer {
+    border: 2px solid black;
+}
+body {
+    background-image:url("All Prject Images/bg8.jpg");
+} 
+/*********** Header CSS **********/
+
+#projectLogoleft {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    padding: 5px;
+    float: left;
+    margin-top: -1%;
+    transition: transform .9s;
+}
+#websitename {
+    font-family: 'Lobster', cursive;
+    padding-left: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 100px;
+    text-align: center;
+    transition: transform .5s;
+    
+}
+#Icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    transition: transform .5s;
+}
+.SocialIcons {
+    border:1px solid chocolate;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    float:right;
+    margin-top: -1%;
+    
+
+}
+.group1 {
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.group2 {
+    padding-left: 10px;
+}
+#projectLogoleft:hover{
+    transform: rotate(360deg);
+    
+}
+#websitename:hover{
+    transform: scale(2);
+    
+}
+#Icons:hover{
+    transform: scale(2);
+    
+}
+/*********** NAV BAR CSS **********/
+.navbar {
+    padding-top: 1px;
+}
+ul {
+    list-style: none;
+    border: 2px solid white;
+    background-image: linear-gradient(orange,yellow);
+    display: flex; 
+    padding:5px; 
+}
+li {
+    width: 60%;
+    text-align: center;  
+}
+a {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar a p {display:none;}
+.navbar a:hover p {display:block;}
+.Trending {
+    margin: 5px;
+    border: 2px;
+    height: 600px;
+}
+#longTrailers {
+    border: 2px;
+    border-radius: 10px;
+}
+.TrendingtrailerThumbnails {
+    margin: 5px;
+    border: 2px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+#ShortTrailers {
+    margin: 2px;
+    width: 400px;
+    height: 250px;
+    border: 2px;
+    border-radius: 10px;
+}
+/*********** Footer CSS **********/
+
+footer {
+    border: 2px;
+    height: 70px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+.Foot2{
+    float: right;
+    color: rgb(14, 15, 15);
+    text-align: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.Foot1{
+    float: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Foot3{
+    text-align: center;
+    padding: 4px;
+    padding-top: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Foot2 img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+span{
+    color:red;
+    
+}
+#nav{
+    color: indigo;
+}

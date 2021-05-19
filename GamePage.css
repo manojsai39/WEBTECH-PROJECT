@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+
+footer {
+    border: 2px solid black;
+}
+body {
+    background-image: url("All Prject Images/bg6.jpg");
+} 
+/*********** Header CSS **********/
+
+#projectLogoleft {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    padding: 5px;
+    float: left;
+    margin-top: -1%;
+    transition: transform .9s;
+}
+#websitename {
+    font-family: 'Lobster', cursive;
+    padding-left: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 100px;
+    text-align: center;
+    transition: transform .5s;
+    
+}
+#Icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    transition: transform .5s;
+}
+.SocialIcons {
+    border:1px solid chocolate;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 10px;
+    float:right;
+    margin-top: -1%;
+    
+
+}
+.group1 {
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.group2 {
+    padding-left: 10px;
+}
+#projectLogoleft:hover{
+    transform: rotate(360deg);
+    
+}
+#websitename:hover{
+    transform: scale(2);
+    
+}
+#Icons:hover{
+    transform: scale(2);
+    
+}
+
+/*********** NAV BAR CSS **********/
+.navbar {
+    padding-top: 1px;
+}
+ul {
+    list-style: none;
+    border: 2px solid white;
+    background-image: linear-gradient(orange,yellow);
+    display: flex; 
+    padding:5px; 
+}
+li {
+    width: 60%;
+    text-align: center;  
+}
+a {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar a p {display:none;}
+.navbar a:hover p {display:block;}
+/*********** Main COntent Area CSS **********/
+.MainContentArea {
+    margin: 5px;
+    border: 2px solid black;
+    height: 780px;
+}
+/*********** Left COntent Area CSS **********/
+.leftContentArea {
+    margin: 5px;
+    border: 2px solid black;
+    float: left;
+    height: 770px;
+    width: 255px;
+}
+#bk{
+    width: 250px;
+    height: 770px;
+}
+/*********** Cebter COntent Area CSS **********/
+.centercontentArea {
+    margin: 5px;
+    border: 2px solid black;
+    width: 1000px;
+    margin-left: 400px;
+    height: 770px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Android_TV_game_controller.jpg/1200px-Android_TV_game_controller.jpg);
+}
+
+.centercontentArea img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+section {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 30px;
+    margin-left: 220px;
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 190px;
+    height: 190px;
+    box-shadow: 0 0 0 1px white;
+    border: 3px solid whitesmoke;
+    cursor: pointer;
+    color: blanchedalmond;
+    line-height: 180px;
+    font-size: 100px;
+    
+}
+
+/*********** Right COntent Area CSS **********/
+.rightcontentArea {
+    margin: 5px;
+    border: 2px solid black;
+    float: right;
+    height: 770px;
+    width: 255px;
+}
+#mcd{
+    width: 250px;
+    height: 770px;
+}
+/*********** Footer CSS **********/
+
+footer {
+    border: 2px solid black;
+    height: 70px;
+    background-color: wheat;
+    border-radius: 10px;
+}
+.Foot2{
+    float: right;
+    color: rgb(14, 15, 15);
+    text-align: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.Foot1{
+    float: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Foot3{
+    text-align: center;
+    padding: 4px;
+    padding-top: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Foot2 img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+span{
+    color:red;
+    
+}
+#nav{
+    color: indigo;
+}

@@ -107,7 +107,7 @@ select{
 
 body{
     border: 2px;
-    background-image: url("All Prject Images/Background1.jpg");
+    background-image: url("All Prject Images/bg8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -119,7 +119,7 @@ iframe{
 
 }
 h1 {
-    color: rgb(10, 10, 10);
+    color: rgb(247, 245, 245);
     padding-left: 200px;
     
 

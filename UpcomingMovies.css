@@ -58,3 +58,11 @@ body {
     transform: rotate(360deg);
     
 }
+#websitename:hover{
+    transform: scale(2);
+    
+}
+#Icons:hover{
+    transform: scale(2);
+    
+}

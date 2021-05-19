@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+footer {
+    border: 2px solid black;
+}
+body {
+    background-image:url("All Prject Images/bg8.jpg");
+} 

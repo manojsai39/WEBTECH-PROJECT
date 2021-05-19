@@ -77,3 +77,7 @@ ul {
     display: flex; 
     padding:5px; 
 }
+li {
+    width: 60%;
+    text-align: center;  
+}

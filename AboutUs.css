@@ -3,7 +3,7 @@
 }
 
 footer {
-    border: 2px solid black;
+    border: 2px;
 }
 body {
     background-image: url("All Prject Images/bg8.jpg");
@@ -90,7 +90,7 @@ a {
 .navbar a:hover p {display:block;}
 .MainContentArea {
     margin: 5px;
-    border: 2px solid black;
+    border: 2px;
     height: 780px;
 }
 .leftContentArea {
@@ -139,7 +139,7 @@ p{
 /*********** Footer CSS **********/
 
 footer {
-    border: 2px solid black;
+    border: 2px;
     height: 90px;
     background-color: wheat;
     border-radius: 10px;

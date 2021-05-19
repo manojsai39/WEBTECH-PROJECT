@@ -54,3 +54,7 @@ body {
 .group2 {
     padding-left: 10px;
 }
+#projectLogoleft:hover{
+    transform: rotate(360deg);
+    
+}

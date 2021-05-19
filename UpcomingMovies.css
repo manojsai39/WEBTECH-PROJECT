@@ -81,3 +81,9 @@ li {
     width: 60%;
     text-align: center;  
 }
+a {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar a p {display:none;}
+.navbar a:hover p {display:block;}

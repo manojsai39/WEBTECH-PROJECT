@@ -118,3 +118,12 @@ footer {
     background-color: wheat;
     border-radius: 10px;
 }
+.Foot2{
+    float: right;
+    color: rgb(14, 15, 15);
+    text-align: left;
+    margin-top: -1%;
+    padding: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
